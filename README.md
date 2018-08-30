@@ -56,10 +56,10 @@ You can use paggination for control searches. Add query integer parameter **limi
 You can use all actions with **GET** requests. Just insert actions(exclude upload avatar),token(api query) and parameters in query.
 Here some examples:  
 
-`http://localhost:1337/users/signup?email=myEmail&name=&myName&password=myPassword`  
+`http://localhost:1337/users/signup?email=myEmail&name=myName&password=myPassword`  
 `http://localhost:1337/topics/ID/update?subject=myNewSubject&api=MyToken`  
 `http://localhost:1337/topics/ID/create?body=myComment&api=MyToken`  
-`http://localhost:1337/comments/ID/create?api=MyToken         It's create and also delete like. See response code to uderstand`  
+`http://localhost:1337/comments/ID/create?api=MyToken`         It's create and also delete like. See response code to uderstand  
 `http://localhost:1337/comments/ID/delete?api=MyToken`
 
 ### Links
