@@ -54,7 +54,8 @@ Repeat it for delete like. **RESPONSE** will be 200.
 You can use paggination for control searches. Add query integer parameter **limit** to limit elements of arrays. Also you can add integer parameter **page** to go next page. Example `http://localhost:/users/?limit=3&page=2`.
 
 You can use all actions with **GET** requests. Just insert actions(exclude upload avatar),token(api query) and parameters in query.
-Here some examples: 
+Here some examples:  
+
 `http://localhost:1337/users/signup?email=myEmail&name=&myName&password=myPassword`  
 `http://localhost:1337/topics/ID/update?subject=myNewSubject&api=MyToken`  
 `http://localhost:1337/topics/ID/create?body=myComment&api=MyToken`  
