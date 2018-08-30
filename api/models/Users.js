@@ -24,6 +24,10 @@ module.exports = {
       required: true,
       unique: true
     },
+    avatar: {
+      type: 'string',
+      default: 'None'
+    },
     topics: {
       collection: 'topics',
       via: 'owner'

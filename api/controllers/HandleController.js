@@ -96,6 +96,8 @@ module.exports = {
           params[key] = req.body[key].toLowerCase();
         } else if (key === 'email') {
           params[key] = req.body[key].toLowerCase();
+        } else if (key === 'avatar') {
+          continue;
         } else {
           params[key] = req.body[key];
         }
@@ -195,7 +197,7 @@ module.exports = {
       for (key in  req.body) {
         if (key === 'name') {
           params[key] = req.body[key].toLowerCase();
-        } else if (key === 'email') {
+        } else if (key === 'email' || key === 'avatar') {
           continue;
         } else {
           params[key] = req.body[key];

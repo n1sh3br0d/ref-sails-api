@@ -7,9 +7,9 @@ module.exports = {
       case 'users':
         model = Users;
         if (params.where && params.where.id && params.where.id === userid) {
-          select = ['name','email'];
+          select = ['name','email','avatar'];
         } else {
-          select = ['name','id'];
+          select = ['name','avatar'];
         }
         break;
 
