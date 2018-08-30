@@ -65,7 +65,7 @@ module.exports.routes = {
 
   'post /users/signin': {controller: 'HandleController', action: 'login'},
 
-  'post /users/:id': {controller: 'HandleController', action: 'avatar'},
+  'post /users/:id/avatar': {controller: 'HandleController', action: 'avatar'},
 
   'get /users/restore': {controller: 'HandleController', action: 'restore'},
 

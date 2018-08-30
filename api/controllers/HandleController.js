@@ -305,7 +305,7 @@ module.exports = {
     let uploadOptions = {
       dirname: `${sails.config.appPath}/uploads`,
       maxBytes: 10000000
-    }
+    };
 
     if (req.id !== req.params.id) {
       res.json(300, 'Access denied');
@@ -317,15 +317,15 @@ module.exports = {
           if (file.length === 0) {
             return res.badRequest('No file was uploaded');
           } else if (file[0].type !== 'image/jpeg' || file[0].type !== 'image/png') {
-            res.badRequest('Only images allowed')
+            res.badRequest('Only images allowed');
           } else {
             let tmpArr = file[0].fd.split('/');
             avatar = tmpArr[tmpArr.length - 1];
-            await action.update('users',{id:req.id},{avatar})
+            await action.update('users',{id:req.id},{avatar});
             res.json(201, 'Avatar uploaded');
           }
         }
       });
-    }    
-  }        
+    }
+  }
 };
